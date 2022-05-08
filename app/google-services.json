@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333009912266",
+    "project_id": "punkbrew-misis",
+    "storage_bucket": "punkbrew-misis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333009912266:android:3fd9c7c15146cf37364f33",
+        "android_client_info": {
+          "package_name": "com.example.punkbrewery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333009912266-rq8amohrgkha98nr181vh0ecp4b8pr9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvRmCoVHOBW9keVY2sgBKzyTxJ8FNgpSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333009912266-rq8amohrgkha98nr181vh0ecp4b8pr9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
