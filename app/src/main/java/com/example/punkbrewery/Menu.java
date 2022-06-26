@@ -18,9 +18,7 @@ import android.widget.Button;
 public class Menu extends Fragment {
     private static final String ARG_BEER_ID = "beerId";
 
-    public Menu() {
-        // Required empty public constructor
-    }
+    public Menu() {}
 
     public static Menu newInstance() {
        return new Menu();
@@ -34,12 +32,10 @@ public class Menu extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View fragmentView = inflater.inflate(R.layout.fragment_menu, container, false);
         Button navigationBeerListBtn = fragmentView.findViewById(R.id.navigation_list);
-        navigationBeerListBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_menu_to_beers));
-//        Button navigationFavoriteBeerBtn = fragmentView.findViewById(R.id.navigation_favorite);
-//        navigationBeerListBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_menu_to_favorite));
+        navigationBeerListBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_menu_to_itemBeer));
         Button navigationRandomBeerBtn = fragmentView.findViewById(R.id.navigation_random);
         Bundle bundle = new Bundle();
         bundle.putString(ARG_BEER_ID, "random");

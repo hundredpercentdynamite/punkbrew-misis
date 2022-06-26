@@ -95,4 +95,6 @@
     <string name="favorite_beer">Favorite beer</string>
     <string name="random_beer">Random beer</string>
     <string name="logout">Logout</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
 </resources>

@@ -60,8 +60,6 @@ public class HomeActivity extends AppCompatActivity {
 
     void checkUserInDb() {
         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-
-
     }
 
     void logout() {

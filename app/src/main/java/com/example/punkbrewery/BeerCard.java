@@ -34,7 +34,6 @@ import retrofit2.Response;
 public class BeerCard extends Fragment {
 
     private final PunkService punkService = PunkApi.getPunkService();
-    private final String base = PunkApi.getApiBase();
     TextView header;
     ImageView imageView;
     TextView description;
@@ -65,16 +64,15 @@ public class BeerCard extends Fragment {
         Call<List<Beer>> call = punkService.getBeerById(beerId);
         call.enqueue(new Callback<List<Beer>>() {
             @Override
-            public void onResponse(Call<List<Beer>> call, Response<List<Beer>> response) {
+            public void onResponse(@NonNull Call<List<Beer>> call, @NonNull Response<List<Beer>> response) {
                 List<Beer> body = response.body();
-                Beer beerData = body.get(0);
-                data = beerData;
+                data = body.get(0);
                 updateView();
             }
 
             @Override
-            public void onFailure(Call<List<Beer>> call, Throwable t) {
-
+            public void onFailure(@NonNull Call<List<Beer>> call, @NonNull Throwable t) {
+                System.out.println(t);
             }
         });
         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;

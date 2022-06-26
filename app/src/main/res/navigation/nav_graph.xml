@@ -15,24 +15,24 @@
             app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/beers"
-        android:name="com.example.punkbrewery.Beers"
-        android:label="Beers"
-        tools:layout="@layout/fragment_beers_list">
-        <action
-            android:id="@+id/action_beers_to_beerCard"
-            app:destination="@id/beerCard" />
-    </fragment>
-    <fragment
         android:id="@+id/menu"
         android:name="com.example.punkbrewery.Menu"
         android:label="Menu"
         tools:layout="@layout/fragment_menu">
         <action
-            android:id="@+id/action_menu_to_beers"
-            app:destination="@id/beers" />
-        <action
             android:id="@+id/action_menu_to_beerCard"
+            app:destination="@id/beerCard" />
+        <action
+            android:id="@+id/action_menu_to_itemBeer"
+            app:destination="@id/itemBeer" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemBeer"
+        android:name="com.example.punkbrewery.BeerList"
+        android:label="Beer List"
+        tools:layout="@layout/beer_item_list">
+        <action
+            android:id="@+id/action_itemBeer_to_beerCard"
             app:destination="@id/beerCard" />
     </fragment>
 </navigation>

@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/layout-v26/fragment_beer_card.xml" value="0.20697463768115942" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/beer_item.xml" value="0.12092391304347826" />
+        <entry key="app/src/main/res/layout/beer_item_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_beer_card.xml" value="0.2028985507246377" />
         <entry key="app/src/main/res/layout/fragment_beers.xml" value="0.20697463768115942" />
         <entry key="app/src/main/res/layout/fragment_beers_list.xml" value="0.2028985507246377" />

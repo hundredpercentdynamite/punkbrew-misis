@@ -8,7 +8,8 @@ public class PunkApi {
     final static private PunkService punkService = new Retrofit.Builder()
             .baseUrl(base)
             .addConverterFactory(JacksonConverterFactory.create())
-            .build().create(PunkService.class);
+            .build()
+            .create(PunkService.class);
 
     static public PunkService getPunkService() {
         return punkService;
